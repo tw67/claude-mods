@@ -1,6 +1,7 @@
 {
   "name": "abo-usage",
   "version": "0.1.0",
-  "description": "Zeigt die Nutzung des Claude-Abos live als farbige Balken über dem Eingabefeld, mit Reset-Zeit",
+  "description": "Zeigt die Nutzung des Claude-Abos live als farbige Balken über dem Eingabefeld, mit Reset-Zeit, sowie die Higgsfield-Credits",
+  "author": { "name": "tw67", "url": "https://github.com/tw67" },
   "types": "./types/index.d.ts"
 }
