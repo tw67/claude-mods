@@ -11,30 +11,35 @@ Läuft im Terminal und in der Desktop-App (Code-Tab).
 
 ## Installation
 
-1. Ordner an einen festen Ort legen, z. B. `~/.claude/mods/abo-usage`.
-2. In `~/.claude/settings.json` eintragen:
+In einer Claude-Code-Session:
 
-   ```json
-   {
-     "env": {
-       "CLAUDE_CODE_PLUGIN_DIRS": "/Users/<name>/.claude/mods/abo-usage"
-     }
-   }
-   ```
+```
+/plugin marketplace add tw67/claude-mods
+/plugin install abo-usage@claude-mods
+```
 
-3. Für die Higgsfield-Anzeige die Guthaben-Abfrage erlauben (sonst bleibt die Zeile leer):
+oder im Terminal:
 
-   ```json
-   {
-     "permissions": {
-       "allow": ["mcp__<higgsfield-connector-id>__balance"]
-     }
-   }
-   ```
+```bash
+claude plugin marketplace add tw67/claude-mods
+claude plugin install abo-usage@claude-mods
+```
 
-4. Claude Code neu starten. Die Leiste erscheint nach der ersten Antwort in einer Session.
+Danach Claude Code neu starten. Die Leiste erscheint nach der ersten Antwort in einer Session.
 
-Für ein einmaliges Ausprobieren im Terminal reicht `claude --plugin-dir <pfad>/abo-usage`.
+Für die Higgsfield-Anzeige die Guthaben-Abfrage in `~/.claude/settings.json` erlauben (sonst bleibt die Zeile leer):
+
+```json
+{
+  "permissions": {
+    "allow": ["mcp__<higgsfield-connector-id>__balance"]
+  }
+}
+```
+
+Updates holen: `claude plugin marketplace update claude-mods`
+
+Zum einmaligen Ausprobieren ohne Installation: `claude --plugin-dir <pfad>/abo-usage`
 
 ## Anpassen
 

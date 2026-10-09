@@ -1,0 +1,15 @@
+{
+  "name": "claude-mods",
+  "owner": { "name": "tw67", "url": "https://github.com/tw67" },
+  "metadata": {
+    "description": "Eigene Mods für Claude Code"
+  },
+  "plugins": [
+    {
+      "name": "abo-usage",
+      "source": "./abo-usage",
+      "description": "Zeigt die Nutzung des Claude-Abos live als farbige Balken über dem Eingabefeld, mit Reset-Zeit, sowie die Higgsfield-Credits",
+      "version": "0.1.0"
+    }
+  ]
+}
