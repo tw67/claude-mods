@@ -1,0 +1,6 @@
+{
+  "name": "abo-usage",
+  "version": "0.1.0",
+  "description": "Zeigt die Nutzung des Claude-Abos live als farbige Balken über dem Eingabefeld, mit Reset-Zeit",
+  "types": "./types/index.d.ts"
+}
